@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3s-7z-Dfw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdE-rV-H4q">
+                                <rect key="frame" x="11" y="107" width="391" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ShopSDK">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="PingFangSC-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCS-9D-0Km">
+                                <rect key="frame" x="40" y="487" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QMH-Jn-IcJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="DEMO支付设置为开发者自有收银台支付">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWithCustomPay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rK1-h9-GX7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwO-Os-e16">
+                                <rect key="frame" x="40" y="269" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Op-Zv-gD4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="DEMO支付设置为MobPay支付">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWithMobPay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TII-Sy-YWu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="els-Uc-e3U">
+                                <rect key="frame" x="322" y="28" width="65" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="2FP-1i-BRJ"/>
+                                    <constraint firstAttribute="width" constant="65" id="IOB-gi-zZE"/>
+                                    <constraint firstAttribute="height" constant="40" id="K00-xQ-tsw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="跳过">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWithMobPay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7p-KX-sEf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v3s-7z-Dfw" secondAttribute="trailing" id="7oX-Kz-yLR"/>
+                            <constraint firstItem="XCS-9D-0Km" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="87w-CU-qEG"/>
+                            <constraint firstItem="v3s-7z-Dfw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C2G-wJ-7vW"/>
+                            <constraint firstItem="v3s-7z-Dfw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D5q-kv-Gsg"/>
+                            <constraint firstItem="EdE-rV-H4q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="DFY-Qg-ZYv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cwO-Os-e16" secondAttribute="trailing" constant="20" id="EtJ-HL-ROh"/>
+                            <constraint firstItem="els-Uc-e3U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MoP-rq-KbC"/>
+                            <constraint firstItem="cwO-Os-e16" firstAttribute="top" secondItem="EdE-rV-H4q" secondAttribute="bottom" constant="120" id="Nxf-el-E0y"/>
+                            <constraint firstAttribute="trailing" secondItem="EdE-rV-H4q" secondAttribute="trailing" constant="12" id="S8A-w2-74i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XCS-9D-0Km" secondAttribute="trailing" constant="20" id="efc-Do-huz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="els-Uc-e3U" secondAttribute="trailing" constant="7" id="f6b-Mf-VJ1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XCS-9D-0Km" secondAttribute="bottom" constant="199" id="fUt-s7-eNX"/>
+                            <constraint firstItem="cwO-Os-e16" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="gii-JR-tg2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v3s-7z-Dfw" secondAttribute="bottom" id="iQ4-c2-Xgu"/>
+                            <constraint firstItem="EdE-rV-H4q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="11" id="v49-tm-2Ri"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="v3s-7z-Dfw" id="qqi-Eu-Om1"/>
+                        <outlet property="button1" destination="cwO-Os-e16" id="7pn-zP-N3g"/>
+                        <outlet property="button2" destination="XCS-9D-0Km" id="KGD-Gh-vCN"/>
+                        <outlet property="passBtn" destination="els-Uc-e3U" id="Kbt-fd-M5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="31.793478260869566"/>
+        </scene>
+    </scenes>
+</document>

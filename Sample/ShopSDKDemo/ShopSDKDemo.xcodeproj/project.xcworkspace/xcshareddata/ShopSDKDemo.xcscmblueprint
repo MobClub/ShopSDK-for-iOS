@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ddbbef2e-7d24-4ea3-accf-f5ea24af4a8b++527",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ddbbef2e-7d24-4ea3-accf-f5ea24af4a8b++527" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ddbbef2e-7d24-4ea3-accf-f5ea24af4a8b++527" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "71E8A7C7-89F7-4578-A3E4-8F14E02F8C78",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ddbbef2e-7d24-4ea3-accf-f5ea24af4a8b++527" : "ShopSDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ShopSDKDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/ShopSDK\/Sample\/ShopSDKDemo\/ShopSDKDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/svn.code.mob.com",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ddbbef2e-7d24-4ea3-accf-f5ea24af4a8b++527"
+    }
+  ]
+}
